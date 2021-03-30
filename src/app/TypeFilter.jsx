@@ -13,7 +13,6 @@ export default function TypeFilter(props) {
     }, [])
 
     const filterPokemons = (selectedType) => {
-        debugger
         let filteredPokemons = props.pokemons.map(poke => {
             const typeExists = poke.types.some(t => t.type.name === selectedType);
             if (!typeExists) {

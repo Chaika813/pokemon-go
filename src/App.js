@@ -37,7 +37,6 @@ function App() {
           })
           .catch(e => alert(e.message)); 
   }
-  console.log(pokemons)
 
   const handlePokeInfo = (pockemon) => {
     setLoadedPoke(pockemon)
@@ -47,8 +46,6 @@ function App() {
     offset+=12
     getMorePokemos();
   }
-
-  console.log(pokemons)
 
   const handlePokemons = (poke) => {
     setPokemons(poke)

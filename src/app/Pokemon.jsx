@@ -20,7 +20,7 @@ export default function Pokemon(props) {
                             {poke.stats.map(stat => {
                                 return (
                                     <tr key={poke.id + stat.stat.name}>
-                                        <td scope="row">{stat.stat.name.charAt(0).toUpperCase() + stat.stat.name.slice(1)}</td>
+                                        <th scope="row">{stat.stat.name.charAt(0).toUpperCase() + stat.stat.name.slice(1)}</th>
                                         <td key={stat.stat.name}>{stat.base_stat}</td>
                                     </tr>
                                 )
